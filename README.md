@@ -7,6 +7,13 @@
 * `cd mixing-find-all-and-query`
 * `npm install`
 
+~~~
+$ ember -v
+ember-cli: 2.14.0
+node: 6.11.1
+os: linux x64
+~~~
+
 ## What This App Is
 
 The app is a simple list of rentals with two properties: title and city.
