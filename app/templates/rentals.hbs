@@ -1,0 +1,15 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome!</h2>
+  <p>We hope you find exactly what you're looking for in a place to stay.</p>
+</div>
+
+{{#list-filter
+   filter=(action 'filterByCity')
+   as |rentals|}}
+  <div class="results flex-100">
+    {{#each rentals as |rentalUnit|}}
+      {{rental-listing rental=rentalUnit}}
+    {{/each}}
+  </div>
+{{/list-filter}}
